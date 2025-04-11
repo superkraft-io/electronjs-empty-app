@@ -1,0 +1,19 @@
+{
+  "name": "SK_ElectronJS_App",
+  "productName": "SK ElectronJS App",
+  "version": "0.1.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build_win": "electron-builder build --win --publish never",
+    "deploy_win": "electron-builder build --win --publish always",
+    "build_mac": "cross-env CSC_LINK=build/Certificates.p12 electron-builder build --mac --publish never",
+    "deploy_mac": "electron-builder build --mac --publish always"
+  },
+  "dependencies": {
+    "ejs-electron": "^3.0.0",
+    "electron": "^35.1.5",
+    "uiohook-napi": "^1.5.4",
+    "wscb": "^0.4.92"
+  }
+}
