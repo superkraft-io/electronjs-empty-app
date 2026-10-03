@@ -5,7 +5,8 @@ module.exports = class SK_View extends SK_RootView {
 
         //This is where you'd populate the ElectronJS BrowserWindow options
         this.info = {
-            show: true
+            show: true,
+            title: 'Window 1'
         }
     }
 
